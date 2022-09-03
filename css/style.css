@@ -1,0 +1,83 @@
+@import url(./_fonts.css);
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    padding: 22px 0;
+    margin-bottom: 100px;
+}
+
+.logo_text {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    margin: 0 13px 0 0;
+}
+
+.second_title {
+    font-size: 16px;
+    color: #7690A8;
+    margin-bottom: 15px;
+}
+
+.main {
+    margin-bottom: 100px;
+}
+
+.main_title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 370px;
+    height: 340px;
+    border: 1px solid #E5EAF4;
+}
+
+.card_title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    padding: 40px 0;
+    height: 190px;
+}
+
+.footer_img {
+    margin-top: 40px;
+}
+
+.footer_img_img {
+    margin-right: 10px;
+}
+ 
+.footer_bg_img {
+    position: absolute;
+    background-color: #16133D;
+    width: 130%;
+    height: 190px;
+    z-index: -1;
+    bottom: 0;
+    left: -200px;
+}
