@@ -1,0 +1,16 @@
+.sprite_list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sprite_list__link>svg {
+    width: 64px;
+    height: 64px;
+    transition: all 0.2s ease;
+}
+
+.sprite_list__link>svg:hover {
+    fill: white;
+    transform: translate(10px, 5px);
+}
