@@ -5,9 +5,20 @@ body {
 }
 
 .header {
+    position: relative;
     margin: 0 auto;
     padding: 22px 0;
     margin-bottom: 100px;
+}
+
+.header:after {
+    content: '';
+    background: #EFEEF3;
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    height: 1px;
+    width: 100%;
 }
 
 .logo,
@@ -23,6 +34,9 @@ body {
     margin: 0 13px 0 0;
 }
 
+.footer_container .logo_text {
+    color: #fff;
+}
 .second_title {
     font-size: 16px;
     color: #7690A8;
@@ -60,8 +74,30 @@ body {
     cursor: pointer;
 }
 
-.card_img:first-child:hover {
-    stroke: #3DB370;
+.card_img {
+    width: 64px;
+    height: 64px;
+    padding: 13px;
+    border: 1px solid #1565d81a;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+}
+
+.card_img_svg_green {
+    opacity: 0;
+}
+
+.card_img:hover .card_img_svg_blue{
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.card_img:hover .card_img_svg_green{
+    opacity: 1;
+}
+
+.card_img:hover{
+    border: 1px solid #36be7191;
 }
 
 .card_title {
@@ -87,7 +123,7 @@ body {
     margin-right: 10px;
 }
 
-.socail_img,
+.social_img:hover,
 .social_img>path:hover {
     cursor: pointer;
     fill: #3DB370;
